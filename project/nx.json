@@ -36,14 +36,6 @@
         "targetName": "test"
       },
       "exclude": [
-        "apps/users-e2e/**/*",
-        "apps-e2e/**/*",
-        "apps/blog-e2e/**/*",
-        "apps/personal-messages-e2e/**/*",
-        "apps/notifications-e2e/**/*",
-        "apps/blog-e2e/**/*",
-        "apps/notifications-e2e/**/*",
-        "apps/personal-messages-e2e/**/*"
       ]
     }
   ]
