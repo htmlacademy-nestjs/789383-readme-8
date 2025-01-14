@@ -1,0 +1,20 @@
+{
+  "name": "blog-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/blog-lib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/blog-lib",
+        "tsConfig": "libs/blog-lib/tsconfig.lib.json",
+        "packageJson": "libs/blog-lib/package.json",
+        "main": "libs/blog-lib/src/index.ts",
+        "assets": ["libs/blog-lib/*.md"]
+      }
+    }
+  }
+}

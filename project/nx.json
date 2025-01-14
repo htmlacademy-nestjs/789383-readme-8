@@ -35,8 +35,14 @@
       "options": {
         "targetName": "test"
       },
-      "exclude": [
-      ]
+      "exclude": []
     }
-  ]
+  ],
+  "targetDefaults": {
+    "@nx/js:tsc": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    }
+  }
 }
