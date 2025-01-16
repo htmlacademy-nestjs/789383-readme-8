@@ -1,8 +1,15 @@
 import {Module} from '@nestjs/common';
-import {BlogUserModule} from "@project/users-lib";
+import {UsersConfigModule, BlogUserModule, getMongooseOptions} from "@project/users-lib";
+import {MongooseModule} from "@nestjs/mongoose";
 
 @Module({
-  imports: [BlogUserModule],
+  imports: [
+    BlogUserModule,
+    UsersConfigModule,
+    MongooseModule.forRootAsync(
+      getMongooseOptions()
+    )
+  ],
   controllers: [],
   providers: [],
 })
